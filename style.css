@@ -56,6 +56,10 @@ nav li:hover{
     width: 60%;
 }
 
+.home img{
+    margin-bottom: 30px;
+}
+
 /* h1 */
 h1{
     font-weight: 600;
