@@ -17,30 +17,47 @@
         <nav>
             <ul>
                 <li class="active">Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li id="#about">About</li>
+                <li id="#skills">Skills</li>
+                <li id="#contact">Contact</li>
             </ul>
         </nav>
         <div class="socials">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+            
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
 
     <div class="container">
         <div class="home">
-            <img src="./images/image 32.png" alt="">
+            <img src="./images/IMG_1988.jpeg" alt="">
             <h1>Precious Bassey</h1>
             <span>Frontend Developer</span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eum cupiditate nesciunt atque veniam ipsum distinctio laboriosam? Ipsum, dicta nulla!</p>
+            <p>A Frontend Developer, UI/UX designer currently learning HTML, CSS and Javascript, i'm currently on a journey to self-reliance with TIIDELab.</p>
         </div>
 
         <div class="about">
             <h1>About Me</h1>
             <p>I'm Precious Bassey, a front-end developer, UI & UX designer, a participant of the TIIDELab cohort 3.0, I'm open to learning, collaborating and networking with colleagues and also increase my skills and employability with the knowledge gained from the program. I joined the Prefellowship to better my communication skills and know how to interact better with others, hopefully i'm able to achieve that and more.</p>
+
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <div class="left">
+                    <img src="./images/Free-Stationery-Mockup-psd-960x640.jpg" alt="">
+                </div>
+                <div class="center">
+                    <img src="./images/iPad+12.9+On+The+Desk+Mockup+Template.jpg" alt="">
+                </div>
+                <div class="right">
+                    <img src="./images/20_website-mockups.jpg" alt="">
+                </div>
+            </div>
         </div>
 
         <div class="skill">
@@ -64,11 +81,11 @@
                 <form action="" class="form-container">
                     <div class="form-details">
                         <label for="">Name</label>
-                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your name" required>
                     </div>
                     <div class="form-details">
                         <label for="">Email</label>
-                        <input type="text" placeholder="Your email">
+                        <input type="text" placeholder="Your email" required>
                     </div>
                     <div class="form-details">
                         <textarea cols="30" rows="10" placeholder="Message"></textarea>
@@ -77,6 +94,27 @@
                 </form>
             </div>
         </div>
+
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./images/Black Minimalist M Initials Letter Name Logo 1.png" alt="">
+        </div>
+        <div class="address">
+            <p>Airport rd Junction,
+                Irhirhi, Benin City
+            </p>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+            
+        </div>
+    </footer>
+    <div class="copy">
+        <p>&copy; Retrooo 2023.</p>
     </div>
 </body>
 </html>

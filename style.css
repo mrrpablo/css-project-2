@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+
 }
 
 body{
@@ -12,6 +15,9 @@ body{
     color: #f8f8f8;
 }
 
+a{
+    color: #f8f8f8;
+}
 
 header{
     display: flex;
@@ -19,6 +25,10 @@ header{
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    background: #212121;
+    margin-top: -70px;
 }
 
 nav ul{
@@ -47,6 +57,11 @@ nav li:hover{
 .socials i{
     width: 30px;
     cursor: pointer;
+    flex: 30%;
+}
+
+.hamburger{
+    display: none;
 }
 
 /* home */
@@ -54,10 +69,13 @@ nav li:hover{
     text-align: center;
     margin: auto;
     width: 60%;
+    margin-top: 50px;
 }
 
 .home img{
     margin-bottom: 30px;
+    width: 400px;
+    max-width: 100%;
 }
 
 /* h1 */
@@ -180,4 +198,109 @@ textarea{
     background: none;
     color: #212121;
     transition: 0.5s;
+}
+
+/* gallery */
+
+.gallery img{
+    max-width: 100%;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.left, .center, .right{
+    flex: 30%;
+}
+
+.left:hover{
+    opacity: .5;
+    transform: scale(2);
+    transition: ease-in-out 2000ms;
+}
+.center:hover{
+    opacity: .5;
+    transform: scale(2);
+    transition: ease-in-out 2000ms;
+}
+.right:hover{
+    opacity: .5;
+    transform: scale(2);
+    transition: ease-in-out 2000ms;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.copy{
+    text-align: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 780px) {
+    .gallery{
+        flex-direction: column;
+    }
+
+    nav ul,
+    .socials{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .logo{
+        margin-left: -50px;
+    }
+
+    .home{
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .about{
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .contact{
+        width: 80%;
+        padding: 0px 30px;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .logo{
+        margin-left: 5px;
+    }
+
+    footer .socials{
+        display: block;
+    }
+
+    footer p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .copy{
+        margin-top: 30px;
+    }
 }
